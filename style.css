@@ -1,0 +1,741 @@
+/* ------------------------------------
+ * note - 默认主题修改
+ *
+ * @author  SHI 記
+ * @link  https://shinote.net/
+ * @update  2025-07-28
+ * --------------------------------- */
+
+/* ------------------
+ * Global style
+ * --------------- */
+body {
+  background-color: #FFF;
+  color: #444;
+  font-family: "LXGW WenKai Screen", "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
+  font-size: 104%;
+  line-height: 1.6;
+}
+
+a {
+  color: #335496;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #444;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1em;
+}
+
+pre,
+code {
+  background: #F3F3F3;
+  font-family: "LXGW WenKai Screen", Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+code {
+  padding: 2px 4px;
+  color: #B94A48;
+}
+
+pre {
+  padding: 8px;
+  overflow: auto;
+  max-height: 400px;
+}
+
+pre code {
+  padding: 3px;
+  color: #444;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  border-left: 4px solid #eee;
+  color: #666;
+}
+
+table {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 5px 10px;
+  border: 1px solid #eee;
+}
+
+table th {
+  background: #f3f3f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "LXGW WenKai Screen", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0 0.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin: 0.75em 0 0.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5,
+h6 {
+  font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Special link style */
+.post-meta a,
+.post-content a,
+.widget a,
+.comment-content a {
+  border-bottom: 1px solid #EEE;
+}
+
+.post-meta a:hover,
+.post-content a:hover,
+.widget a:hover,
+.comment-content a:hover {
+  border-bottom-color: transparent;
+}
+
+/* ------------------
+ * Header
+ * --------------- */
+#header {
+  padding-top: 35px;
+  border-bottom: 1px solid #EEE;
+}
+
+#logo {
+  color: #333;
+  font-size: 2.5em;
+}
+
+#logo img {
+  max-height: 64px;
+}
+
+.description {
+  margin: .5em 0 0;
+  color: #999;
+  font-style: italic;
+}
+
+/* Navigation menu */
+#nav-menu {
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+#nav-menu a {
+  font-size: 1.125em;
+  display: block;
+  margin-right: -1px;
+  padding: 0 24px;
+  letter-spacing: 0.5px;
+  border: 1px solid #EEE;
+  border-bottom: none;
+  border-radius: 4px; 
+  height: 40px;
+  line-height: 40px;
+  color: #444;
+  float: left;
+  transition: all 0.2s ease;
+}
+
+#nav-menu a:hover,
+#nav-menu .current {
+  background: #F6F6F6;
+}
+
+/* Search */
+#search {
+  position: relative;
+  margin-top: 15px;
+}
+
+#search input {
+  padding-right: 30px;
+}
+
+#search button {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background: transparent url(img/icon-search.png) no-repeat center center;
+  direction: ltr;
+  /* fix RTL language */
+  text-indent: -9999em;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  #search button {
+    background-image: url(img/icon-search@2x.png);
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+}
+
+/* ------------------
+ * Main
+ * --------------- */
+.post {
+  padding: 15px 0 20px;
+  border-bottom: 1px solid #EEE;
+}
+
+.post-title {
+  margin: .83em 0;
+  font-size: 1.4em;
+}
+
+.post-meta {
+  margin-top: -0.5em;
+  padding: 0;
+  color: #999;
+  font-size: 0.9em;
+}
+
+.post-meta li {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  padding-left: 12px;
+  border-left: 1px solid #EEE;
+}
+
+.post-meta li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border: none;
+}
+
+.post-content {
+  line-height: 1.5;
+}
+
+.post .tags {
+  clear: both;
+}
+
+.post-near {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  color: #999;
+}
+
+.post-near li {
+  margin: 10px 0;
+}
+
+.archive-title {
+  margin: 1em 0 -1em;
+  padding-top: 20px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+.more {
+  text-align: center;
+}
+
+.more a {
+  border: none;
+}
+
+.protected .text {
+  width: 50%;
+}
+
+/* Page nav */
+.page-navigator {
+  list-style: none;
+  margin: 25px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.page-navigator li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.page-navigator a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.page-navigator a:hover {
+  background: #EEE;
+  text-decoration: none;
+}
+
+.page-navigator .current a {
+  color: #444;
+  background: #EEE;
+}
+
+/* ------------------
+ * Comment list
+ * --------------- */
+#comments {
+  padding-top: 15px;
+}
+
+.comment-list,
+.comment-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li {
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid #EEE;
+}
+
+.comment-list li.comment-level-odd {
+  background: #F6F6F3;
+}
+
+.comment-list li.comment-level-even {
+  background: #FFF;
+}
+
+.comment-list li.comment-by-author {
+  background: #FFF9E8;
+}
+
+.comment-list li .comment-reply {
+  text-align: right;
+  font-size: .92857em;
+}
+
+.comment-meta a {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.comment-author {
+  display: block;
+  margin-bottom: 3px;
+  color: #444;
+}
+
+.comment-author .avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-author cite {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Comment reply */
+.comment-list .respond {
+  margin-top: 15px;
+  border-top: 1px solid #EEE;
+}
+
+.respond .cancel-comment-reply {
+  float: right;
+  margin-top: 15px;
+  font-size: .92857em;
+}
+
+#comment-form label {
+  display: block;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+#comment-form .required:after {
+  content: " *";
+  color: #C00;
+}
+
+/* ------------------
+ * secondary
+ * --------------- */
+#secondary {
+  padding-top: 15px;
+  word-wrap: break-word;
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget-list {
+  list-style: none;
+  padding: 0;
+}
+
+.widget-list li {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.widget-list li ul {
+  margin-left: 15px;
+}
+
+.widget,
+.widget-list li {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* ------------------
+ * Footer
+ * --------------- */
+#footer {
+  padding: 3em 0;
+  line-height: 1.5;
+  text-align: center;
+  color: #999;
+}
+
+/* -----------------
+ * Error page
+ * -------------- */
+.error-page {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* -----------------
+ * Content format
+ *--------------- */
+.post-content,
+.comment-content {
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.post-content h2,
+.comment-content h2 {
+  font-size: 1.28571em;
+}
+
+.post-content img,
+.comment-content img,
+.post-content video,
+.comment-content video {
+  max-width: 100%;
+}
+
+.post-content a img,
+.comment-content a img {
+  background: #FFF;
+  position: relative;
+  bottom: -4px;
+  /* hidden img parent link border  */
+}
+
+.post-content hr,
+.comment-content hr {
+  margin: 2em auto;
+  width: 100px;
+  border: 1px solid #E9E9E9;
+  border-width: 2px 0 0 0;
+}
+
+/* -----------------
+ * Misc
+ *--------------- */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+img.alignleft {
+  margin: 0 15px 0 0;
+}
+
+img.alignright {
+  margin: 0 0 0 15px;
+}
+
+/* -----------------
+ * Responsive
+ *--------------- */
+@media (max-width: 767px) {
+  body {
+    font-size: 81.25%;
+  }
+
+  #nav-menu a {
+    float: none;
+    display: inline-block;
+    margin: 0 -2px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header,
+  .post-title,
+  .post-meta {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+.sr-only {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+* Extends the .sr-only class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Hide reCAPTCHAv3
+*/
+.grecaptcha-badge {
+  display: none !important;
+}
+
+/* ------------------
+ * 暗色模式 Dark Mode
+ * --------------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark-mode a {
+  color: #5a8aad;
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:active {
+  color: #ffffff;
+}
+
+body.dark-mode pre,
+body.dark-mode code {
+  background: #1e1e1e;
+}
+
+body.dark-mode code {
+  color: #ff9999;
+}
+
+body.dark-mode pre code {
+  color: #cccccc;
+}
+
+body.dark-mode blockquote {
+  border-left: 4px solid #444;
+  color: #aaa;
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+  border-color: #444;
+}
+
+body.dark-mode table th {
+  background: #222;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="url"],
+body.dark-mode input[type="password"],
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode #logo {
+  color: #eee;
+}
+
+body.dark-mode .description,
+body.dark-mode .post-meta,
+body.dark-mode .post-near,
+body.dark-mode .archive-title,
+body.dark-mode #footer {
+  color: #888;
+}
+
+body.dark-mode #nav-menu a {
+  background: #1a1a1a;
+  color: #ccc;
+  border-color: #333;
+}
+
+body.dark-mode #nav-menu a:hover,
+body.dark-mode #nav-menu .current {
+  background: #333;
+}
+
+body.dark-mode .post,
+body.dark-mode .comment-list li {
+  border-color: #333;
+}
+
+body.dark-mode .comment-list li.comment-level-odd,
+body.dark-mode .comment-list li.comment-level-even,
+body.dark-mode .comment-list li.comment-by-author {
+  background: #1e1e1e;
+}
+
+body.dark-mode .page-navigator a {
+  background: #1e1e1e;
+  color: #ccc;
+}
+
+body.dark-mode .page-navigator a:hover,
+body.dark-mode .page-navigator .current a {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-mode hr {
+  border-color: #444;
+}
+
+#toggle-dark-mode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 暗色模式下按钮反转样式，提示“切回亮色模式” */
+body.dark-mode #toggle-dark-mode {
+  background-color: #ddd;
+  color: #111;
+}
+
+body.dark-mode #secondary,
+body.dark-mode .widget,
+body.dark-mode .widget-list li {
+  color: #aaa;
+  /* 或 #999，根据你想要的灰度深浅来调整 */
+}
+
+body.dark-mode .post-meta a,
+body.dark-mode .post-content a,
+body.dark-mode .widget a,
+body.dark-mode .comment-content a {
+  border-bottom: none;
+}
