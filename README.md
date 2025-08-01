@@ -32,5 +32,4 @@
 
    <img src="https://file.shinote.net/2025/08/01Kbmuo7fG.webp" alt="文章" title="文章" width = 65%>
 
-#### 下载
 
